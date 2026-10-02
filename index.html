@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monkey CZ ($MONKEYCZ) — Swing Through Crypto</title>
+  <meta name="description" content="Monkey CZ is here to swing through crypto, stack memes, and unleash pure monkey market chaos. Buy $MONKEYCZ with BNB." />
+  <link rel="icon" href="logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            banana: "#FFE14A",
+            gold: "#F5A623",
+            peel: "#FFC93C",
+            fur: "#8B5E3C",
+            cocoa: "#3D2412",
+            cream: "#FFF6D8",
+            tan: "#F0D7A8",
+            jungle: "#0C2416",
+            leaf: "#1E6B38",
+          },
+          fontFamily: {
+            display: ["Fredoka", "ui-sans-serif", "system-ui", "sans-serif"],
+            body: ["Nunito", "ui-sans-serif", "system-ui", "sans-serif"],
+          },
+          boxShadow: {
+            glow: "0 0 40px rgba(255, 225, 74, 0.35)",
+            card: "0 20px 50px rgba(0, 0, 0, 0.35)",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #07140c; }
+
+    @keyframes swing {
+      0%, 100% { transform: rotate(-3.5deg); }
+      50% { transform: rotate(3.5deg); }
+    }
+    @keyframes drift {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(18px) rotate(8deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    @keyframes glow-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(255, 225, 74, 0.45), 0 12px 30px rgba(0, 0, 0, 0.3); }
+      50% { box-shadow: 0 0 28px 6px rgba(255, 225, 74, 0.35), 0 12px 30px rgba(0, 0, 0, 0.3); }
+    }
+    .swing { animation: swing 3.4s ease-in-out infinite; transform-origin: 50% 0; }
+    .drift { animation: drift 7s ease-in-out infinite; }
+    .drift-slow { animation: drift 9s ease-in-out infinite reverse; }
+    .ticker-track { animation: ticker 28s linear infinite; }
+    .buy-glow { animation: glow-pulse 2.4s ease-in-out infinite; }
+    .vine-link { background-image: linear-gradient(90deg, transparent, #FFE14A 12%, #FFE14A 88%, transparent); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .swing, .drift, .drift-slow, .ticker-track, .buy-glow { animation: none; }
+    }
+  </style>
+</head>
+<body class="font-body text-cream antialiased">
+  <!-- Banana tree forest -->
+  <div class="pointer-events-none fixed inset-0 -z-20" aria-hidden="true">
+    <img src="banner.jpg" alt="" class="h-full w-full scale-110 object-cover blur-[3px]" />
+  </div>
+  <div class="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-b from-jungle/70 via-[#0a1c12]/88 to-[#06110b]/95" aria-hidden="true"></div>
+  <div class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(255,225,74,0.18),transparent_55%)]" aria-hidden="true"></div>
+
+  <!-- Hanging fruit along the canopy -->
+  <div class="pointer-events-none fixed left-3 top-24 z-0 hidden text-5xl opacity-80 lg:block drift" aria-hidden="true">🍌</div>
+  <div class="pointer-events-none fixed right-6 top-36 z-0 hidden text-4xl opacity-70 lg:block drift-slow" aria-hidden="true">🍌</div>
+  <div class="pointer-events-none fixed bottom-16 left-8 z-0 hidden text-4xl opacity-60 lg:block drift-slow" aria-hidden="true">🍌</div>
+  <div class="pointer-events-none fixed bottom-28 right-10 z-0 hidden text-5xl opacity-70 lg:block drift" aria-hidden="true">🍌</div>
+
+  <header class="sticky top-0 z-50 border-b border-banana/25 bg-[#0c2416]/75 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="logo.jpg" alt="Monkey CZ logo" class="h-12 w-12 rounded-2xl border-2 border-banana object-cover shadow-glow" />
+        <span class="font-display text-xl font-bold leading-none text-banana sm:text-2xl">Monkey CZ</span>
+      </a>
+      <nav class="hidden items-center gap-6 text-sm font-extrabold uppercase tracking-wide text-tan md:flex">
+        <a href="#how-to-buy" class="transition hover:text-banana">How to Buy</a>
+        <a href="#chart" class="transition hover:text-banana">Chart</a>
+      </nav>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="https://t.me/MonkeyCZ_portal" target="_blank" rel="noopener noreferrer" aria-label="Monkey CZ on Telegram" class="transition hover:scale-110">
+          <img src="tg.png" alt="" class="h-10 w-10 rounded-full shadow-md" />
+        </a>
+        <a href="https://x.com/MonkeyCZ_x" target="_blank" rel="noopener noreferrer" aria-label="Monkey CZ on X" class="transition hover:scale-110">
+          <img src="x.png" alt="" class="h-10 w-10 rounded-xl shadow-md" />
+        </a>
+        <a href="https://pancakeswap.finance/swap?outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="hidden rounded-full bg-banana px-4 py-2 font-display text-sm font-bold text-cocoa shadow-glow transition hover:bg-peel sm:inline-flex">
+          Buy Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 pb-8 pt-12 md:grid-cols-2 md:pt-16">
+      <div class="order-2 md:order-1">
+        <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-banana/50 bg-cocoa/70 px-4 py-1.5 text-sm font-extrabold uppercase tracking-[0.18em] text-banana">
+          <span class="h-2 w-2 rounded-full bg-banana"></span>
+          $MONKEYCZ · BNB Chain
+        </p>
+        <h1 class="font-display text-5xl font-bold leading-[0.95] text-banana drop-shadow sm:text-6xl lg:text-7xl">
+          Monkey CZ
+        </h1>
+        <p class="mt-5 max-w-xl text-lg font-bold leading-relaxed text-cream sm:text-xl">
+          Monkey CZ is here to swing through crypto, stack memes, and unleash pure monkey market chaos.
+        </p>
+        <p class="mt-3 max-w-xl text-base font-semibold leading-relaxed text-tan">
+          The troop has landed in the banana tree forest. Load your wallet with BNB, grab a vine, and join the stampede before the canopy goes wild.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="https://pancakeswap.finance/swap?outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="buy-glow inline-flex items-center justify-center rounded-full bg-banana px-7 py-3.5 font-display text-lg font-bold text-cocoa transition hover:-translate-y-0.5 hover:bg-peel">
+            Buy Now
+          </a>
+          <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border-2 border-banana bg-cocoa/60 px-7 py-3.5 font-display text-lg font-bold text-banana backdrop-blur transition hover:-translate-y-0.5 hover:bg-banana hover:text-cocoa">
+            Chart
+          </a>
+        </div>
+
+        <div class="mt-6 flex flex-col gap-3 rounded-2xl border border-banana/40 bg-[#140c06]/75 p-3 shadow-card backdrop-blur sm:flex-row sm:items-center">
+          <div class="min-w-0 flex-1 px-2">
+            <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-gold">Contract Address</p>
+            <p id="ca-text" class="truncate font-display text-lg font-semibold text-cream">TBA</p>
+          </div>
+          <button id="copy-ca" type="button" class="shrink-0 rounded-xl bg-banana px-5 py-3 font-display font-bold text-cocoa transition hover:bg-peel">
+            Copy CA
+          </button>
+        </div>
+      </div>
+
+      <div class="order-1 flex justify-center md:order-2">
+        <div class="swing">
+          <div class="mx-auto mb-1 h-10 w-1 rounded-full bg-gradient-to-b from-leaf to-gold"></div>
+          <div class="relative">
+            <div class="absolute inset-6 rounded-full bg-banana/40 blur-3xl"></div>
+            <img src="logo.jpg" alt="Monkey CZ mascot waving hello" class="relative w-72 max-w-full rounded-[2rem] border-4 border-banana object-cover shadow-card sm:w-80" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="relative mt-6 overflow-hidden border-y border-banana/30 bg-cocoa/80 py-3">
+      <div class="ticker-track flex w-max gap-8 whitespace-nowrap font-display text-lg font-bold text-banana">
+        <span>🍌 $MONKEYCZ</span><span>Swing through crypto</span><span>🍌 Stack memes</span><span>Pure monkey market chaos</span><span>🍌 BNB Chain</span><span>Monkey CZ</span>
+        <span>🍌 $MONKEYCZ</span><span>Swing through crypto</span><span>🍌 Stack memes</span><span>Pure monkey market chaos</span><span>🍌 BNB Chain</span><span>Monkey CZ</span>
+      </div>
+    </div>
+
+    <section class="mx-auto max-w-6xl px-4 py-14" aria-label="Project banner">
+      <figure class="overflow-hidden rounded-[2rem] border-4 border-banana shadow-card">
+        <img src="banner.jpg" alt="Monkey CZ standing in a sunlit banana tree forest" class="h-auto w-full object-cover" />
+      </figure>
+      <p class="mx-auto mt-6 max-w-3xl text-center font-display text-2xl font-semibold leading-snug text-banana sm:text-3xl">
+        Monkey CZ is here to swing through crypto, stack memes, and unleash pure monkey market chaos.
+      </p>
+    </section>
+
+    <section id="how-to-buy" class="scroll-mt-24 mx-auto max-w-6xl px-4 pb-16">
+      <div class="mb-10 text-center">
+        <p class="text-sm font-extrabold uppercase tracking-[0.22em] text-gold">Four swings. One troop.</p>
+        <h2 class="mt-2 font-display text-4xl font-bold text-banana sm:text-5xl">How to Buy</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-lg font-bold text-tan">
+          Pick up $MONKEYCZ with BNB. No secret handshake — just a wallet, some BNB, and PancakeSwap.
+        </p>
+      </div>
+
+      <ol class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <li class="relative rounded-3xl border border-banana/40 bg-[#140c06]/80 p-6 shadow-card backdrop-blur">
+          <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-banana font-display text-2xl font-bold text-cocoa">01</span>
+          <h3 class="mt-5 font-display text-2xl font-bold text-banana">Set Up a Wallet</h3>
+          <p class="mt-2 font-semibold leading-relaxed text-tan">
+            Install MetaMask or Trust Wallet. Add BNB Smart Chain and switch your network to BSC before you climb.
+          </p>
+        </li>
+        <li class="relative rounded-3xl border border-banana/40 bg-[#140c06]/80 p-6 shadow-card backdrop-blur">
+          <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-banana font-display text-2xl font-bold text-cocoa">02</span>
+          <h3 class="mt-5 font-display text-2xl font-bold text-banana">Load Up on BNB</h3>
+          <p class="mt-2 font-semibold leading-relaxed text-tan">
+            Buy BNB and send it to your wallet. Keep a little extra BNB aside so gas doesn’t leave you hanging from the vine.
+          </p>
+        </li>
+        <li class="relative rounded-3xl border border-banana/40 bg-[#140c06]/80 p-6 shadow-card backdrop-blur">
+          <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-banana font-display text-2xl font-bold text-cocoa">03</span>
+          <h3 class="mt-5 font-display text-2xl font-bold text-banana">Swap for $MONKEYCZ</h3>
+          <p class="mt-2 font-semibold leading-relaxed text-tan">
+            Hit Buy Now to open PancakeSwap. Connect your wallet, select BNB, and swap it for $MONKEYCZ. Paste the contract if the token isn’t listed yet.
+          </p>
+        </li>
+        <li class="relative rounded-3xl border border-banana/40 bg-[#140c06]/80 p-6 shadow-card backdrop-blur">
+          <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-banana font-display text-2xl font-bold text-cocoa">04</span>
+          <h3 class="mt-5 font-display text-2xl font-bold text-banana">Confirm &amp; Go Bananas</h3>
+          <p class="mt-2 font-semibold leading-relaxed text-tan">
+            Approve the swap, add the contract address to your wallet, and you’re in the troop — ready to stack memes and swing with the chaos.
+          </p>
+        </li>
+      </ol>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="https://pancakeswap.finance/swap?outputCurrency=TBA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-banana px-7 py-3.5 font-display text-lg font-bold text-cocoa shadow-glow transition hover:bg-peel">
+          Buy Now
+        </a>
+        <a href="#chart" class="inline-flex items-center justify-center rounded-full border-2 border-banana px-7 py-3.5 font-display text-lg font-bold text-banana transition hover:bg-banana hover:text-cocoa">
+          View Chart
+        </a>
+      </div>
+    </section>
+
+    <section id="chart" class="scroll-mt-24 mx-auto max-w-6xl px-4 pb-20">
+      <div class="overflow-hidden rounded-[2rem] border-4 border-banana bg-[#100a06]/85 shadow-card backdrop-blur">
+        <div class="flex flex-col gap-4 border-b border-banana/30 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+          <div>
+            <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-gold">Dexscreener</p>
+            <h2 class="font-display text-3xl font-bold text-banana sm:text-4xl">$MONKEYCZ Chart</h2>
+          </div>
+          <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-banana px-6 py-3 font-display text-base font-bold text-cocoa transition hover:bg-peel">
+            Open Chart
+          </a>
+        </div>
+        <div class="p-3 sm:p-4">
+          <iframe
+            title="Dexscreener chart for MONKEYCZ"
+            src="https://dexscreener.com/bsc/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15"
+            class="h-[420px] w-full rounded-2xl border border-banana/20 bg-jungle sm:h-[520px]"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-banana/30 bg-[#07140c]/90">
+    <div class="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-10 text-center">
+      <img src="logo.jpg" alt="" class="h-16 w-16 rounded-2xl border-2 border-banana object-cover" />
+      <div>
+        <p class="font-display text-2xl font-bold text-banana">Monkey CZ</p>
+        <p class="mt-1 font-extrabold tracking-wide text-tan">$MONKEYCZ · BNB Chain</p>
+      </div>
+      <p class="max-w-xl font-bold text-cream">
+        Monkey CZ is here to swing through crypto, stack memes, and unleash pure monkey market chaos.
+      </p>
+      <div class="flex items-center gap-3">
+        <a href="https://t.me/MonkeyCZ_portal" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <img src="tg.png" alt="" class="h-11 w-11 rounded-full transition hover:scale-110" />
+        </a>
+        <a href="https://x.com/MonkeyCZ_x" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <img src="x.png" alt="" class="h-11 w-11 rounded-xl transition hover:scale-110" />
+        </a>
+      </div>
+      <p class="text-sm font-semibold text-tan/80">Meme coin energy only. Do your own research. This is not financial advice.</p>
+    </div>
+  </footer>
+
+  <script>
+    const CA = "TBA";
+    const button = document.getElementById("copy-ca");
+
+    button.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(CA);
+      } catch (err) {
+        const field = document.createElement("textarea");
+        field.value = CA;
+        field.setAttribute("readonly", "");
+        field.style.position = "fixed";
+        field.style.left = "-9999px";
+        document.body.appendChild(field);
+        field.select();
+        document.execCommand("copy");
+        field.remove();
+      }
+      const original = button.textContent;
+      button.textContent = "Copied!";
+      window.setTimeout(() => {
+        button.textContent = original;
+      }, 1600);
+    });
+  </script>
+</body>
+</html>
